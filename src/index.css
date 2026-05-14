@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #000000E6;
+  --color-foreground: #ffffff;
+  --color-neon-cyan: #00ffd5;
+  --color-dark-gray: #111111;
+  --color-brutal-black: #000000;
+  
+  --shadow-brutal: 4px 4px 0px 0px #00ffd5;
+  --shadow-brutal-white: 4px 4px 0px 0px #ffffff;
+  
+  --animate-grid-flow: grid-flow 20s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-cyan: pulse-cyan 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes grid-flow {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 50px; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes pulse-cyan {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #ffffff;
+  background-color: #000000E6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #050505;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ffd5;
+  border-radius: 0px;
+}
+
+/* Utilities */
+.bg-grid-cyan {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(0, 255, 213, 0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(0, 255, 213, 0.05) 1px, transparent 1px);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 255, 213, 0.5);
+}
+
+.grainy-bg {
+  position: relative;
+}
+
+.grainy-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+  z-index: 50;
+}
+
+/* Brutalist Button Base */
+.btn-cyber {
+  @apply relative px-8 py-4 font-black uppercase tracking-tighter transition-all duration-200 border-2 border-neon-cyan text-neon-cyan bg-transparent;
+  box-shadow: 4px 4px 0px 0px #00ffd5;
+}
+
+.btn-cyber:hover {
+  @apply bg-neon-cyan text-black;
+  box-shadow: 0px 0px 0px 0px #00ffd5;
+  transform: translate(4px, 4px);
+}
+
+.text-stroke-cyan {
+  -webkit-text-stroke: 1px #00ffd5;
+}
