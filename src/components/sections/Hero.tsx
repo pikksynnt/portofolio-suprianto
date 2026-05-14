@@ -98,7 +98,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-background py-32 px-8 sm:px-20">
+    <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-background py-32 px-4 sm:px-20">
       {/* Grid Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-grid-cyan opacity-[0.03] bg-grid-animate" />
@@ -176,12 +176,12 @@ export const Hero = () => {
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
           className="relative flex justify-center lg:justify-end"
         >
-          <div className="relative w-full max-w-xl aspect-square flex items-center justify-center">
+          <div className="relative w-full max-w-xs sm:max-w-xl aspect-square flex items-center justify-center">
             {/* Floating Slogans */}
             <motion.div
               animate={{ y: [0, -15, 0], x: [0, 5, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-10 -left-20 z-20 px-6 py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-xs tracking-[0.5em] uppercase font-bold"
+              className="absolute top-10 left-0 sm:-left-20 z-20 px-2 sm:px-6 py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-[8px] sm:text-xs tracking-[0.3em] sm:tracking-[0.5em] uppercase font-bold"
             >
               INHALE
             </motion.div>
@@ -189,7 +189,7 @@ export const Hero = () => {
             <motion.div
               animate={{ y: [0, 20, 0], x: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="absolute top-1/2 -right-24 z-20 px-6 py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-xs tracking-[0.5em] uppercase font-bold"
+              className="absolute top-1/2 right-0 sm:-right-24 z-20 px-2 sm:px-6 py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-[8px] sm:text-xs tracking-[0.3em] sm:tracking-[0.5em] uppercase font-bold"
             >
               EXHALE
             </motion.div>
@@ -197,7 +197,7 @@ export const Hero = () => {
             <motion.div
               animate={{ y: [0, -10, 0], x: [0, 8, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-20 -left-20 z-20 px-6 py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-xs tracking-[0.5em] uppercase font-bold"
+              className="absolute bottom-20 left-0 sm:-left-20 z-20 px-2 sm:px-6 py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-[8px] sm:text-xs tracking-[0.3em] sm:tracking-[0.5em] uppercase font-bold"
             >
               SMILE
             </motion.div>
