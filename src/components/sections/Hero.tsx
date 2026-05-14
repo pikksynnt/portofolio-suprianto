@@ -55,7 +55,7 @@ const ScrambleText = ({ text, delay = 0 }: { text: string; delay?: number }) => 
         setDisplayText(
           text
             .split('')
-            .map((char, index) => {
+            .map((_, index) => {
               if (index < iteration) {
                 return text[index];
               }

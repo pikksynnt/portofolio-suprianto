@@ -8,7 +8,6 @@ import aboutProfileImg from '../../assets/about-profile.png';
 import projectDental from '../../assets/portfolio/project-dental.png';
 import projectSnapora from '../../assets/portfolio/project-snapora.png';
 import projectEcommerce from '../../assets/portfolio/project-ecommerce.png';
-import articleCleancode from '../../assets/portfolio/article-cleancode.png';
 import pkmImg from '../../assets/portfolio/pkm.png';
 import hakiImg from '../../assets/portfolio/haki.png';
 import pkm2Img from '../../assets/portfolio/pkm-2.png';

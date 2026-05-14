@@ -87,8 +87,8 @@ export const Keyboard = () => {
         {/* Spacebar Area */}
         <div className="mt-10 flex justify-center w-full">
           <motion.button
-            whileHover={{ y: 2, shadow: 'none' }}
-            whileTap={{ y: 4, shadow: 'none' }}
+            whileHover={{ y: 2 }}
+            whileTap={{ y: 4 }}
             className="w-full max-w-2xl h-14 bg-[#151515] rounded-xl border-b-8 border-black flex items-center justify-center relative overflow-hidden group shadow-[0_10px_0_#000]"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-neon-cyan/5 to-transparent group-hover:via-neon-cyan/10 transition-all duration-500" />
