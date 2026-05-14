@@ -181,7 +181,7 @@ export const Hero = () => {
             <motion.div
               animate={{ y: [0, -15, 0], x: [0, 5, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-10 left-0 sm:-left-20 z-20 px-2 sm:px-6 py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-[8px] sm:text-xs tracking-[0.3em] sm:tracking-[0.5em] uppercase font-bold"
+              className="absolute top-10 left-4 sm:-left-20 z-20 px-1.5 sm:px-6 py-1 sm:py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-[7px] sm:text-xs tracking-tight sm:tracking-[0.5em] uppercase font-bold"
             >
               INHALE
             </motion.div>
@@ -189,7 +189,7 @@ export const Hero = () => {
             <motion.div
               animate={{ y: [0, 20, 0], x: [0, -10, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-              className="absolute top-1/2 right-0 sm:-right-24 z-20 px-2 sm:px-6 py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-[8px] sm:text-xs tracking-[0.3em] sm:tracking-[0.5em] uppercase font-bold"
+              className="absolute top-1/2 right-4 sm:-right-24 z-20 px-1.5 sm:px-6 py-1 sm:py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-[7px] sm:text-xs tracking-tight sm:tracking-[0.5em] uppercase font-bold"
             >
               EXHALE
             </motion.div>
@@ -197,7 +197,7 @@ export const Hero = () => {
             <motion.div
               animate={{ y: [0, -10, 0], x: [0, 8, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-20 left-0 sm:-left-20 z-20 px-2 sm:px-6 py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-[8px] sm:text-xs tracking-[0.3em] sm:tracking-[0.5em] uppercase font-bold"
+              className="absolute bottom-20 left-4 sm:-left-20 z-20 px-1.5 sm:px-6 py-1 sm:py-2 bg-white/5 backdrop-blur-md border border-white/10 font-mono text-neon-cyan text-[7px] sm:text-xs tracking-tight sm:tracking-[0.5em] uppercase font-bold"
             >
               SMILE
             </motion.div>
